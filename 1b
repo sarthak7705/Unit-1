@@ -1,0 +1,25 @@
+1. ipconfig/ifconfig - ipconfig /all
+From the output, look for this section:
+Wireless LAN adapter Wi-Fi
+You need to find ONLY 3 things:
+•	IPv4 Address (example: 10.173.9.33)
+•	Default Gateway (example: 10.173.9.92)
+•	DNS Server
+You ALREADY found yours:
+IPv4 Address : 10.173.9.33
+Default Gateway : 10.173.9.92
+DNS Server : 10.173.9.92
+
+2. ping – ping <gateway>
+Ex. ping 10.173.9.92
+Ping the Internet
+To test internet connectivity:
+Command - ping google.com
+
+3. Trace Route - tracert google.com
+4. Pathping - pathping google.com
+5. ARP Table - arp -a
+6. nbtstat - nbtstat -n
+7. netstat - netstat -an
+8. nslookup - nslookup google.com
+9. route - route print
